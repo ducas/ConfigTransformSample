@@ -129,8 +129,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Properties\WebJobs.xml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Properties\ligershark.webjobs.targets" />
+    <Content Include="Properties\ligershark.webjobs.ext.targets" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -154,8 +157,14 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Azure-Dev.config" />
+    <Content Include="webjobs.wpp.targets" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Job\Job.csproj">
+      <Project>{C3711BAB-0D9A-4335-BB27-06060E6A5EA6}</Project>
+      <Name>Job</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
